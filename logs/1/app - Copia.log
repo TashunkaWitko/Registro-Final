@@ -1,0 +1,26 @@
+2024-04-30T12:14:26.913+02:00  INFO 20980 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.10 with PID 20980 (C:\esercizi_java\registro\target\classes started by bonel in C:\esercizi_java\registro)
+2024-04-30T12:14:26.916+02:00  INFO 20980 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T12:14:27.711+02:00  INFO 20980 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T12:14:27.791+02:00  INFO 20980 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2024-04-30T12:14:28.355+02:00  INFO 20980 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-30T12:14:28.376+02:00  INFO 20980 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T12:14:28.377+02:00  INFO 20980 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-30T12:14:28.446+02:00  INFO 20980 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T12:14:28.447+02:00  INFO 20980 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1466 ms
+2024-04-30T12:14:28.591+02:00  INFO 20980 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T12:14:28.646+02:00  INFO 20980 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T12:14:28.681+02:00  INFO 20980 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T12:14:28.900+02:00  INFO 20980 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T12:14:28.921+02:00  INFO 20980 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T12:14:29.199+02:00  INFO 20980 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3303e89e
+2024-04-30T12:14:29.202+02:00  INFO 20980 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T12:14:29.263+02:00  WARN 20980 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-30T12:14:30.289+02:00  INFO 20980 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T12:14:30.381+02:00  INFO 20980 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T12:14:30.709+02:00  INFO 20980 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-30T12:14:31.109+02:00  WARN 20980 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T12:14:31.424+02:00  INFO 20980 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-30T12:14:31.437+02:00  INFO 20980 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.055 seconds (process running for 5.577)
+2024-04-30T12:37:51.529+02:00  INFO 20980 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T12:37:51.532+02:00  INFO 20980 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-30T12:37:51.541+02:00  INFO 20980 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
