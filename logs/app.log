@@ -1716,3 +1716,855 @@ Caused by: java.lang.NullPointerException: Cannot invoke "it.pi.registro.registr
 2024-06-04T14:02:30.254+02:00  INFO 26842 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-04T14:02:30.263+02:00  INFO 26842 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-06-04T14:02:30.267+02:00  INFO 26842 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T08:48:22.952+02:00  INFO 43432 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 43432 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T08:48:22.956+02:00  INFO 43432 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T08:48:23.738+02:00  INFO 43432 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T08:48:23.897+02:00  INFO 43432 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 12 JPA repository interfaces.
+2024-06-05T08:48:24.398+02:00  INFO 43432 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T08:48:24.407+02:00  INFO 43432 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T08:48:24.407+02:00  INFO 43432 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T08:48:24.495+02:00  INFO 43432 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T08:48:24.495+02:00  INFO 43432 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1476 ms
+2024-06-05T08:48:24.612+02:00  INFO 43432 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T08:48:24.644+02:00  INFO 43432 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T08:48:24.659+02:00  INFO 43432 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T08:48:24.769+02:00  INFO 43432 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T08:48:24.782+02:00  INFO 43432 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T08:48:25.077+02:00  INFO 43432 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1752e45c
+2024-06-05T08:48:25.079+02:00  INFO 43432 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T08:48:25.103+02:00  WARN 43432 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T08:48:25.106+02:00  WARN 43432 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T08:48:25.913+02:00  INFO 43432 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T08:48:26.060+02:00  INFO 43432 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T08:48:26.351+02:00  INFO 43432 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T08:48:27.508+02:00  WARN 43432 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T08:48:27.860+02:00  INFO 43432 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T08:48:27.877+02:00  INFO 43432 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.322 seconds (process running for 5.68)
+2024-06-05T08:48:41.099+02:00  INFO 43432 --- [registro] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T08:48:41.100+02:00  INFO 43432 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T08:48:41.101+02:00  INFO 43432 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-05T08:53:38.891+02:00  INFO 43432 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T08:53:38.894+02:00  INFO 43432 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T08:53:38.902+02:00  INFO 43432 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T08:54:08.547+02:00  INFO 44044 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 44044 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T08:54:08.552+02:00  INFO 44044 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T08:54:09.364+02:00  INFO 44044 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T08:54:09.522+02:00  INFO 44044 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 12 JPA repository interfaces.
+2024-06-05T08:54:09.994+02:00  INFO 44044 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T08:54:10.001+02:00  INFO 44044 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T08:54:10.001+02:00  INFO 44044 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T08:54:10.063+02:00  INFO 44044 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T08:54:10.064+02:00  INFO 44044 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1440 ms
+2024-06-05T08:54:10.177+02:00  INFO 44044 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T08:54:10.211+02:00  INFO 44044 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T08:54:10.225+02:00  INFO 44044 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T08:54:10.324+02:00  INFO 44044 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T08:54:10.336+02:00  INFO 44044 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T08:54:10.592+02:00  INFO 44044 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f06ebe0
+2024-06-05T08:54:10.594+02:00  INFO 44044 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T08:54:10.618+02:00  WARN 44044 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T08:54:10.620+02:00  WARN 44044 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T08:54:11.483+02:00  INFO 44044 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T08:54:11.566+02:00  INFO 44044 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T08:54:11.799+02:00  INFO 44044 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T08:54:13.012+02:00  WARN 44044 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T08:54:13.352+02:00  INFO 44044 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T08:54:13.364+02:00  INFO 44044 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.208 seconds (process running for 5.561)
+2024-06-05T08:54:25.265+02:00  INFO 44044 --- [registro] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T08:54:25.266+02:00  INFO 44044 --- [registro] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T08:54:25.267+02:00  INFO 44044 --- [registro] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-05T09:20:03.381+02:00  INFO 44044 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T09:20:03.388+02:00  INFO 44044 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T09:20:03.398+02:00  INFO 44044 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T09:20:22.012+02:00  INFO 46682 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 46682 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T09:20:22.017+02:00  INFO 46682 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T09:20:22.927+02:00  INFO 46682 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T09:20:23.109+02:00  INFO 46682 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 12 JPA repository interfaces.
+2024-06-05T09:20:23.709+02:00  INFO 46682 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T09:20:23.718+02:00  INFO 46682 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T09:20:23.719+02:00  INFO 46682 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T09:20:23.788+02:00  INFO 46682 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T09:20:23.788+02:00  INFO 46682 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1703 ms
+2024-06-05T09:20:23.929+02:00  INFO 46682 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T09:20:23.956+02:00  INFO 46682 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T09:20:23.985+02:00  INFO 46682 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T09:20:24.108+02:00  INFO 46682 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T09:20:24.122+02:00  INFO 46682 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T09:20:24.427+02:00  INFO 46682 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45297e7
+2024-06-05T09:20:24.429+02:00  INFO 46682 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T09:20:24.458+02:00  WARN 46682 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T09:20:24.463+02:00  WARN 46682 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T09:20:25.579+02:00  INFO 46682 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T09:20:25.686+02:00  INFO 46682 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T09:20:25.972+02:00  INFO 46682 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T09:20:27.295+02:00  WARN 46682 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T09:20:27.727+02:00  INFO 46682 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T09:20:27.739+02:00  INFO 46682 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 6.191 seconds (process running for 6.595)
+2024-06-05T09:21:32.473+02:00  INFO 46682 --- [registro] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T09:21:32.473+02:00  INFO 46682 --- [registro] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T09:21:32.476+02:00  INFO 46682 --- [registro] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-06-05T09:21:32.637+02:00  WARN 46682 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T09:21:32.637+02:00 ERROR 46682 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T10:04:56.095+02:00  INFO 46682 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:04:56.103+02:00  INFO 46682 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T10:04:56.113+02:00  INFO 46682 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T10:05:19.297+02:00  INFO 50993 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 50993 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T10:05:19.303+02:00  INFO 50993 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T10:05:20.228+02:00  INFO 50993 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T10:05:20.414+02:00  INFO 50993 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 12 JPA repository interfaces.
+2024-06-05T10:05:21.010+02:00  INFO 50993 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T10:05:21.019+02:00  INFO 50993 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T10:05:21.019+02:00  INFO 50993 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T10:05:21.089+02:00  INFO 50993 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T10:05:21.089+02:00  INFO 50993 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1713 ms
+2024-06-05T10:05:21.232+02:00  INFO 50993 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T10:05:21.261+02:00  INFO 50993 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T10:05:21.277+02:00  INFO 50993 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T10:05:21.406+02:00  INFO 50993 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T10:05:21.421+02:00  INFO 50993 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T10:05:21.716+02:00  INFO 50993 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6785c9fa
+2024-06-05T10:05:21.718+02:00  INFO 50993 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T10:05:21.745+02:00  WARN 50993 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T10:05:21.749+02:00  WARN 50993 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T10:05:22.831+02:00  INFO 50993 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T10:05:22.935+02:00  INFO 50993 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:05:23.205+02:00  INFO 50993 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T10:05:24.594+02:00  WARN 50993 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T10:05:25.013+02:00  INFO 50993 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T10:05:25.027+02:00  INFO 50993 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 6.196 seconds (process running for 6.569)
+2024-06-05T10:07:26.914+02:00  INFO 50993 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:07:26.918+02:00  INFO 50993 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T10:07:26.929+02:00  INFO 50993 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T10:07:41.211+02:00  INFO 51259 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 51259 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T10:07:41.216+02:00  INFO 51259 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T10:07:42.154+02:00  INFO 51259 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T10:07:42.342+02:00  INFO 51259 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 12 JPA repository interfaces.
+2024-06-05T10:07:42.982+02:00  INFO 51259 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T10:07:42.990+02:00  INFO 51259 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T10:07:42.990+02:00  INFO 51259 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T10:07:43.058+02:00  INFO 51259 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T10:07:43.059+02:00  INFO 51259 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1770 ms
+2024-06-05T10:07:43.203+02:00  INFO 51259 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T10:07:43.232+02:00  INFO 51259 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T10:07:43.248+02:00  INFO 51259 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T10:07:43.373+02:00  INFO 51259 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T10:07:43.388+02:00  INFO 51259 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T10:07:43.691+02:00  INFO 51259 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1752e45c
+2024-06-05T10:07:43.693+02:00  INFO 51259 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T10:07:43.720+02:00  WARN 51259 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T10:07:43.724+02:00  WARN 51259 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T10:07:44.758+02:00  INFO 51259 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T10:07:44.863+02:00  INFO 51259 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:07:45.137+02:00  INFO 51259 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T10:07:46.581+02:00  WARN 51259 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T10:07:47.032+02:00  INFO 51259 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T10:07:47.047+02:00  INFO 51259 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 6.297 seconds (process running for 6.674)
+2024-06-05T10:41:30.819+02:00  INFO 51259 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:41:30.826+02:00  INFO 51259 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T10:41:30.836+02:00  INFO 51259 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T10:42:29.228+02:00  INFO 54747 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 54747 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T10:42:29.233+02:00  INFO 54747 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T10:42:30.207+02:00  INFO 54747 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T10:42:30.395+02:00  INFO 54747 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 12 JPA repository interfaces.
+2024-06-05T10:42:31.039+02:00  INFO 54747 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T10:42:31.047+02:00  INFO 54747 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T10:42:31.048+02:00  INFO 54747 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T10:42:31.119+02:00  INFO 54747 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T10:42:31.119+02:00  INFO 54747 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1807 ms
+2024-06-05T10:42:31.261+02:00  INFO 54747 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T10:42:31.289+02:00  INFO 54747 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T10:42:31.305+02:00  INFO 54747 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T10:42:31.431+02:00  INFO 54747 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T10:42:31.445+02:00  INFO 54747 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T10:42:31.751+02:00  INFO 54747 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@438aaa9f
+2024-06-05T10:42:31.753+02:00  INFO 54747 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T10:42:31.781+02:00  WARN 54747 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T10:42:31.784+02:00  WARN 54747 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T10:42:32.816+02:00  INFO 54747 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T10:42:32.987+02:00  INFO 54747 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:42:33.268+02:00  INFO 54747 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T10:42:34.650+02:00  WARN 54747 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T10:42:35.055+02:00  INFO 54747 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T10:42:35.070+02:00  INFO 54747 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 6.32 seconds (process running for 6.709)
+2024-06-05T10:42:53.103+02:00  INFO 54747 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:42:53.107+02:00  INFO 54747 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T10:42:53.119+02:00  INFO 54747 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T10:42:59.745+02:00  INFO 54826 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 54826 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T10:42:59.750+02:00  INFO 54826 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T10:43:00.643+02:00  INFO 54826 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T10:43:00.832+02:00  INFO 54826 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 12 JPA repository interfaces.
+2024-06-05T10:43:01.435+02:00  INFO 54826 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T10:43:01.443+02:00  INFO 54826 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T10:43:01.444+02:00  INFO 54826 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T10:43:01.512+02:00  INFO 54826 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T10:43:01.512+02:00  INFO 54826 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1692 ms
+2024-06-05T10:43:01.655+02:00  INFO 54826 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T10:43:01.681+02:00  INFO 54826 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T10:43:01.696+02:00  INFO 54826 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T10:43:01.817+02:00  INFO 54826 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T10:43:01.831+02:00  INFO 54826 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T10:43:02.122+02:00  INFO 54826 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f06ebe0
+2024-06-05T10:43:02.125+02:00  INFO 54826 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T10:43:02.152+02:00  WARN 54826 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T10:43:02.155+02:00  WARN 54826 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T10:43:03.231+02:00  INFO 54826 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T10:43:03.333+02:00  INFO 54826 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:43:03.610+02:00  INFO 54826 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T10:43:04.903+02:00  WARN 54826 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T10:43:05.304+02:00  INFO 54826 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T10:43:05.317+02:00  INFO 54826 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 6.032 seconds (process running for 6.407)
+2024-06-05T11:24:44.388+02:00  INFO 54826 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T11:24:44.395+02:00  INFO 54826 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T11:24:44.410+02:00  INFO 54826 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T11:28:15.348+02:00  INFO 59283 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 59283 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T11:28:15.354+02:00  INFO 59283 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T11:28:16.266+02:00  INFO 59283 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T11:28:16.452+02:00  INFO 59283 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 12 JPA repository interfaces.
+2024-06-05T11:28:17.044+02:00  INFO 59283 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T11:28:17.052+02:00  INFO 59283 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T11:28:17.052+02:00  INFO 59283 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T11:28:17.122+02:00  INFO 59283 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T11:28:17.123+02:00  INFO 59283 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1697 ms
+2024-06-05T11:28:17.262+02:00  INFO 59283 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T11:28:17.298+02:00  INFO 59283 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T11:28:17.317+02:00  INFO 59283 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T11:28:17.448+02:00  INFO 59283 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T11:28:17.464+02:00  INFO 59283 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T11:28:17.768+02:00  INFO 59283 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f06ebe0
+2024-06-05T11:28:17.770+02:00  INFO 59283 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T11:28:17.799+02:00  WARN 59283 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T11:28:17.803+02:00  WARN 59283 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T11:28:18.804+02:00  INFO 59283 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T11:28:18.919+02:00  INFO 59283 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T11:28:19.251+02:00  INFO 59283 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T11:28:20.627+02:00  WARN 59283 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T11:28:21.052+02:00  INFO 59283 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T11:28:21.067+02:00  INFO 59283 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 6.18 seconds (process running for 6.566)
+2024-06-05T11:59:33.076+02:00  INFO 59283 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T11:59:33.084+02:00  INFO 59283 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T11:59:33.096+02:00  INFO 59283 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T11:59:59.552+02:00  INFO 62325 --- [registro] [main] i.p.r.registro.RegistroApplicationTests  : Starting RegistroApplicationTests using Java 17.0.8.1 with PID 62325 (started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T11:59:59.555+02:00  INFO 62325 --- [registro] [main] i.p.r.registro.RegistroApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T12:00:01.014+02:00  INFO 62325 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T12:00:01.274+02:00  INFO 62325 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 249 ms. Found 12 JPA repository interfaces.
+2024-06-05T12:00:02.113+02:00  INFO 62325 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T12:00:02.159+02:00  INFO 62325 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T12:00:02.186+02:00  INFO 62325 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T12:00:02.480+02:00  INFO 62325 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T12:00:02.511+02:00  INFO 62325 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T12:00:02.874+02:00  INFO 62325 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f2c995b
+2024-06-05T12:00:02.877+02:00  INFO 62325 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T12:00:02.916+02:00  WARN 62325 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T12:00:02.927+02:00  WARN 62325 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T12:00:04.770+02:00  INFO 62325 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T12:00:04.954+02:00  INFO 62325 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T12:00:05.423+02:00  INFO 62325 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T12:00:07.532+02:00  WARN 62325 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T12:00:08.339+02:00  INFO 62325 --- [registro] [main] i.p.r.registro.RegistroApplicationTests  : Started RegistroApplicationTests in 9.273 seconds (process running for 10.709)
+2024-06-05T12:00:09.087+02:00  INFO 62325 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T12:00:09.093+02:00  INFO 62325 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T12:00:09.105+02:00  INFO 62325 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T12:08:44.438+02:00  INFO 63243 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 63243 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T12:08:44.443+02:00  INFO 63243 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T12:08:45.344+02:00  INFO 63243 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T12:08:45.526+02:00  INFO 63243 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 12 JPA repository interfaces.
+2024-06-05T12:08:46.120+02:00  INFO 63243 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T12:08:46.128+02:00  INFO 63243 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T12:08:46.129+02:00  INFO 63243 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T12:08:46.196+02:00  INFO 63243 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T12:08:46.197+02:00  INFO 63243 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1686 ms
+2024-06-05T12:08:46.337+02:00  INFO 63243 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T12:08:46.371+02:00  INFO 63243 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T12:08:46.389+02:00  INFO 63243 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T12:08:46.518+02:00  INFO 63243 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T12:08:46.536+02:00  INFO 63243 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T12:08:46.821+02:00  INFO 63243 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63cf578f
+2024-06-05T12:08:46.824+02:00  INFO 63243 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T12:08:46.852+02:00  WARN 63243 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T12:08:46.856+02:00  WARN 63243 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T12:08:47.855+02:00  INFO 63243 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T12:08:47.956+02:00  INFO 63243 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T12:08:48.311+02:00  INFO 63243 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T12:08:49.739+02:00  WARN 63243 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T12:08:50.103+02:00  INFO 63243 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T12:08:50.118+02:00  INFO 63243 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 6.128 seconds (process running for 6.5)
+2024-06-05T14:01:09.624+02:00  INFO 63243 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T14:01:09.629+02:00  INFO 63243 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T14:01:09.636+02:00  INFO 63243 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T16:51:57.759+02:00  INFO 78495 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 78495 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T16:51:57.764+02:00  INFO 78495 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T16:51:58.527+02:00  INFO 78495 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T16:51:58.690+02:00  INFO 78495 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 12 JPA repository interfaces.
+2024-06-05T16:51:59.199+02:00  INFO 78495 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T16:51:59.207+02:00  INFO 78495 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T16:51:59.207+02:00  INFO 78495 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T16:51:59.290+02:00  INFO 78495 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T16:51:59.291+02:00  INFO 78495 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1458 ms
+2024-06-05T16:51:59.403+02:00  INFO 78495 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T16:51:59.428+02:00  INFO 78495 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T16:51:59.442+02:00  INFO 78495 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T16:51:59.546+02:00  INFO 78495 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T16:51:59.557+02:00  INFO 78495 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T16:51:59.816+02:00  INFO 78495 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@438aaa9f
+2024-06-05T16:51:59.818+02:00  INFO 78495 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T16:51:59.841+02:00  WARN 78495 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T16:51:59.845+02:00  WARN 78495 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T16:52:00.758+02:00  INFO 78495 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T16:52:00.852+02:00  INFO 78495 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T16:52:01.164+02:00  INFO 78495 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T16:52:02.308+02:00  WARN 78495 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T16:52:02.610+02:00  INFO 78495 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T16:52:02.622+02:00  INFO 78495 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.251 seconds (process running for 5.584)
+2024-06-05T16:52:28.776+02:00  INFO 78495 --- [registro] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T16:52:28.776+02:00  INFO 78495 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T16:52:28.778+02:00  INFO 78495 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-05T16:52:28.903+02:00  WARN 78495 --- [registro] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T16:52:28.904+02:00 ERROR 78495 --- [registro] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T16:52:55.134+02:00  WARN 78495 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1406, SQLState: 22001
+2024-06-05T16:52:55.134+02:00 ERROR 78495 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Data truncation: Data too long for column 'http_request_body' at row 1
+2024-06-05T16:52:55.138+02:00 ERROR 78495 --- [registro] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Data truncation: Data too long for column 'http_request_body' at row 1] [insert into apilogs (caller_ip,http_request_body,http_request_method,http_response_code,http_response_message,request_date,response_date,url_called) values (?,?,?,?,?,?,?,?)]; SQL [insert into apilogs (caller_ip,http_request_body,http_request_method,http_response_code,http_response_message,request_date,response_date,url_called) values (?,?,?,?,?,?,?,?)]] with root cause
+
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'http_request_body' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2868) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:386) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:300) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:219) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:134) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:754) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:738) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.1.5.jar:6.1.5]
+	at jdk.proxy2/jdk.proxy2.$Proxy128.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319) ~[spring-orm-6.1.5.jar:6.1.5]
+	at jdk.proxy2/jdk.proxy2.$Proxy128.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618) ~[spring-data-jpa-3.2.4.jar:3.2.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.4.jar:3.2.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220) ~[spring-aop-6.1.5.jar:6.1.5]
+	at jdk.proxy2/jdk.proxy2.$Proxy140.save(Unknown Source) ~[na:na]
+	at it.pi.registro.registro.service.impl.ApiLogServiceImpl.saveLog(ApiLogServiceImpl.java:52) ~[classes/:na]
+	at it.pi.registro.registro.controller.api.ImportController.importCsv(ImportController.java:44) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-06-05T16:57:47.902+02:00  WARN 78495 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T16:57:47.908+02:00 ERROR 78495 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T16:58:40.601+02:00  WARN 78495 --- [registro] [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T16:58:40.603+02:00 ERROR 78495 --- [registro] [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T16:59:05.589+02:00  WARN 78495 --- [registro] [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T16:59:05.593+02:00 ERROR 78495 --- [registro] [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:06:40.714+02:00  INFO 78495 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:06:40.717+02:00  INFO 78495 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T17:06:40.726+02:00  INFO 78495 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T17:06:57.367+02:00  INFO 80331 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 80331 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T17:06:57.370+02:00  INFO 80331 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T17:06:58.130+02:00  INFO 80331 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T17:06:58.285+02:00  INFO 80331 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 12 JPA repository interfaces.
+2024-06-05T17:06:58.747+02:00  INFO 80331 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T17:06:58.754+02:00  INFO 80331 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T17:06:58.755+02:00  INFO 80331 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T17:06:58.813+02:00  INFO 80331 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T17:06:58.814+02:00  INFO 80331 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1382 ms
+2024-06-05T17:06:58.926+02:00  INFO 80331 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T17:06:58.949+02:00  INFO 80331 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T17:06:58.973+02:00  INFO 80331 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T17:06:59.071+02:00  INFO 80331 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T17:06:59.083+02:00  INFO 80331 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T17:06:59.328+02:00  INFO 80331 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1752e45c
+2024-06-05T17:06:59.330+02:00  INFO 80331 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T17:06:59.354+02:00  WARN 80331 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T17:06:59.358+02:00  WARN 80331 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T17:07:00.180+02:00  INFO 80331 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T17:07:00.266+02:00  INFO 80331 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:07:00.541+02:00  INFO 80331 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T17:07:01.800+02:00  WARN 80331 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T17:07:02.089+02:00  INFO 80331 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T17:07:02.113+02:00  INFO 80331 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.127 seconds (process running for 5.451)
+2024-06-05T17:07:54.842+02:00  INFO 80331 --- [registro] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T17:07:54.842+02:00  INFO 80331 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T17:07:54.844+02:00  INFO 80331 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-05T17:07:54.985+02:00  WARN 80331 --- [registro] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:07:54.985+02:00 ERROR 80331 --- [registro] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:08:12.727+02:00  INFO 80331 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:08:12.731+02:00  INFO 80331 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T17:08:12.740+02:00  INFO 80331 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T17:08:24.899+02:00  INFO 80502 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 80502 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T17:08:24.902+02:00  INFO 80502 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T17:08:25.721+02:00  INFO 80502 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T17:08:25.887+02:00  INFO 80502 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 12 JPA repository interfaces.
+2024-06-05T17:08:26.425+02:00  INFO 80502 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T17:08:26.432+02:00  INFO 80502 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T17:08:26.432+02:00  INFO 80502 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T17:08:26.491+02:00  INFO 80502 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T17:08:26.491+02:00  INFO 80502 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1513 ms
+2024-06-05T17:08:26.605+02:00  INFO 80502 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T17:08:26.627+02:00  INFO 80502 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T17:08:26.640+02:00  INFO 80502 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T17:08:26.739+02:00  INFO 80502 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T17:08:26.751+02:00  INFO 80502 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T17:08:26.989+02:00  INFO 80502 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4afdfc0f
+2024-06-05T17:08:26.991+02:00  INFO 80502 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T17:08:27.014+02:00  WARN 80502 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T17:08:27.017+02:00  WARN 80502 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T17:08:27.936+02:00  INFO 80502 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T17:08:28.024+02:00  INFO 80502 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:08:28.335+02:00  INFO 80502 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T17:08:29.547+02:00  WARN 80502 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T17:08:29.851+02:00  INFO 80502 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T17:08:29.865+02:00  INFO 80502 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.356 seconds (process running for 5.695)
+2024-06-05T17:08:40.147+02:00  INFO 80502 --- [registro] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T17:08:40.147+02:00  INFO 80502 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T17:08:40.149+02:00  INFO 80502 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-05T17:08:52.368+02:00  WARN 80502 --- [registro] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:08:52.369+02:00 ERROR 80502 --- [registro] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:08:53.006+02:00  WARN 80502 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:08:53.007+02:00 ERROR 80502 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:08:53.601+02:00  WARN 80502 --- [registro] [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:08:53.602+02:00 ERROR 80502 --- [registro] [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:08:54.170+02:00  WARN 80502 --- [registro] [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:08:54.176+02:00 ERROR 80502 --- [registro] [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:12:57.059+02:00  WARN 80502 --- [registro] [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:12:57.064+02:00 ERROR 80502 --- [registro] [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:25:05.581+02:00  INFO 80502 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:25:05.584+02:00  INFO 80502 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T17:25:05.594+02:00  INFO 80502 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T17:25:23.438+02:00  INFO 82135 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 82135 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T17:25:23.443+02:00  INFO 82135 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T17:25:24.204+02:00  INFO 82135 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T17:25:24.366+02:00  INFO 82135 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 12 JPA repository interfaces.
+2024-06-05T17:25:24.867+02:00  INFO 82135 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T17:25:24.873+02:00  INFO 82135 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T17:25:24.874+02:00  INFO 82135 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T17:25:24.933+02:00  INFO 82135 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T17:25:24.934+02:00  INFO 82135 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1430 ms
+2024-06-05T17:25:25.059+02:00  INFO 82135 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T17:25:25.082+02:00  INFO 82135 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T17:25:25.096+02:00  INFO 82135 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T17:25:25.201+02:00  INFO 82135 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T17:25:25.213+02:00  INFO 82135 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T17:25:25.471+02:00  INFO 82135 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194911c1
+2024-06-05T17:25:25.472+02:00  INFO 82135 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T17:25:25.495+02:00  WARN 82135 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T17:25:25.498+02:00  WARN 82135 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T17:25:26.377+02:00  INFO 82135 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T17:25:26.461+02:00  INFO 82135 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:25:26.694+02:00  INFO 82135 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T17:25:27.908+02:00  WARN 82135 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T17:25:28.207+02:00  INFO 82135 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T17:25:28.218+02:00  INFO 82135 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.168 seconds (process running for 5.5)
+2024-06-05T17:25:35.825+02:00  INFO 82135 --- [registro] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T17:25:35.826+02:00  INFO 82135 --- [registro] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T17:25:35.828+02:00  INFO 82135 --- [registro] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-05T17:25:35.963+02:00  WARN 82135 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:25:35.963+02:00 ERROR 82135 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:25:35.978+02:00 ERROR 82135 --- [registro] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.400 BAD_REQUEST] with root cause
+
+java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.400 BAD_REQUEST
+	at java.base/java.lang.Enum.valueOf(Enum.java:273) ~[na:na]
+	at org.springframework.http.HttpStatus.valueOf(HttpStatus.java:34) ~[spring-web-6.1.5.jar:6.1.5]
+	at it.pi.registro.registro.service.impl.ApiLogServiceImpl.saveLog(ApiLogServiceImpl.java:47) ~[classes/:na]
+	at it.pi.registro.registro.service.impl.ImportServiceImpl.importCsv(ImportServiceImpl.java:117) ~[classes/:na]
+	at it.pi.registro.registro.controller.api.ImportController.importCsv(ImportController.java:43) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-06-05T17:25:36.639+02:00  WARN 82135 --- [registro] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:25:36.640+02:00 ERROR 82135 --- [registro] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:25:36.645+02:00 ERROR 82135 --- [registro] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.400 BAD_REQUEST] with root cause
+
+java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.400 BAD_REQUEST
+	at java.base/java.lang.Enum.valueOf(Enum.java:273) ~[na:na]
+	at org.springframework.http.HttpStatus.valueOf(HttpStatus.java:34) ~[spring-web-6.1.5.jar:6.1.5]
+	at it.pi.registro.registro.service.impl.ApiLogServiceImpl.saveLog(ApiLogServiceImpl.java:47) ~[classes/:na]
+	at it.pi.registro.registro.service.impl.ImportServiceImpl.importCsv(ImportServiceImpl.java:117) ~[classes/:na]
+	at it.pi.registro.registro.controller.api.ImportController.importCsv(ImportController.java:43) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-06-05T17:25:37.360+02:00  WARN 82135 --- [registro] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:25:37.362+02:00 ERROR 82135 --- [registro] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:25:37.367+02:00 ERROR 82135 --- [registro] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.400 BAD_REQUEST] with root cause
+
+java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.400 BAD_REQUEST
+	at java.base/java.lang.Enum.valueOf(Enum.java:273) ~[na:na]
+	at org.springframework.http.HttpStatus.valueOf(HttpStatus.java:34) ~[spring-web-6.1.5.jar:6.1.5]
+	at it.pi.registro.registro.service.impl.ApiLogServiceImpl.saveLog(ApiLogServiceImpl.java:47) ~[classes/:na]
+	at it.pi.registro.registro.service.impl.ImportServiceImpl.importCsv(ImportServiceImpl.java:117) ~[classes/:na]
+	at it.pi.registro.registro.controller.api.ImportController.importCsv(ImportController.java:43) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-06-05T17:27:45.928+02:00  INFO 82135 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:27:45.931+02:00  INFO 82135 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T17:27:45.938+02:00  INFO 82135 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T17:27:58.882+02:00  INFO 82427 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 82427 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T17:27:58.887+02:00  INFO 82427 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T17:27:59.690+02:00  INFO 82427 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T17:27:59.860+02:00  INFO 82427 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 12 JPA repository interfaces.
+2024-06-05T17:28:00.400+02:00  INFO 82427 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T17:28:00.406+02:00  INFO 82427 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T17:28:00.407+02:00  INFO 82427 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T17:28:00.467+02:00  INFO 82427 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T17:28:00.467+02:00  INFO 82427 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1520 ms
+2024-06-05T17:28:00.593+02:00  INFO 82427 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T17:28:00.623+02:00  INFO 82427 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T17:28:00.638+02:00  INFO 82427 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T17:28:00.745+02:00  INFO 82427 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T17:28:00.756+02:00  INFO 82427 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T17:28:01.025+02:00  INFO 82427 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10b67f54
+2024-06-05T17:28:01.027+02:00  INFO 82427 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T17:28:01.051+02:00  WARN 82427 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T17:28:01.055+02:00  WARN 82427 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T17:28:01.925+02:00  INFO 82427 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T17:28:02.012+02:00  INFO 82427 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:28:02.302+02:00  INFO 82427 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T17:28:03.634+02:00  WARN 82427 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T17:28:03.978+02:00  INFO 82427 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T17:28:03.991+02:00  INFO 82427 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.54 seconds (process running for 5.981)
+2024-06-05T17:28:12.607+02:00  INFO 82427 --- [registro] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T17:28:12.608+02:00  INFO 82427 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T17:28:12.609+02:00  INFO 82427 --- [registro] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-05T17:28:12.733+02:00  WARN 82427 --- [registro] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:28:12.733+02:00 ERROR 82427 --- [registro] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:28:13.426+02:00  WARN 82427 --- [registro] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:28:13.427+02:00 ERROR 82427 --- [registro] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:28:14.030+02:00  WARN 82427 --- [registro] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:28:14.031+02:00 ERROR 82427 --- [registro] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:28:14.594+02:00  WARN 82427 --- [registro] [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:28:14.600+02:00 ERROR 82427 --- [registro] [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:28:15.090+02:00  WARN 82427 --- [registro] [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:28:15.097+02:00 ERROR 82427 --- [registro] [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:28:15.666+02:00  WARN 82427 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:28:15.667+02:00 ERROR 82427 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:28:16.288+02:00  WARN 82427 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:28:16.292+02:00 ERROR 82427 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:30:15.495+02:00  WARN 82427 --- [registro] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:30:15.495+02:00 ERROR 82427 --- [registro] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:30:19.358+02:00  INFO 82427 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:30:19.361+02:00  INFO 82427 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T17:30:19.377+02:00  INFO 82427 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T17:30:31.594+02:00  INFO 82697 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 82697 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T17:30:31.598+02:00  INFO 82697 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T17:30:32.380+02:00  INFO 82697 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T17:30:32.542+02:00  INFO 82697 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 12 JPA repository interfaces.
+2024-06-05T17:30:33.051+02:00  INFO 82697 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T17:30:33.058+02:00  INFO 82697 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T17:30:33.058+02:00  INFO 82697 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T17:30:33.116+02:00  INFO 82697 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T17:30:33.117+02:00  INFO 82697 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1445 ms
+2024-06-05T17:30:33.230+02:00  INFO 82697 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T17:30:33.253+02:00  INFO 82697 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T17:30:33.266+02:00  INFO 82697 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T17:30:33.371+02:00  INFO 82697 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T17:30:33.383+02:00  INFO 82697 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T17:30:33.641+02:00  INFO 82697 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@249b54af
+2024-06-05T17:30:33.643+02:00  INFO 82697 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T17:30:33.665+02:00  WARN 82697 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T17:30:33.668+02:00  WARN 82697 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T17:30:34.544+02:00  INFO 82697 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T17:30:34.628+02:00  INFO 82697 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:30:34.964+02:00  INFO 82697 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T17:30:36.093+02:00  WARN 82697 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T17:30:36.396+02:00  INFO 82697 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T17:30:36.408+02:00  INFO 82697 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.228 seconds (process running for 5.582)
+2024-06-05T17:30:39.057+02:00  INFO 82697 --- [registro] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T17:30:39.058+02:00  INFO 82697 --- [registro] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T17:30:39.060+02:00  INFO 82697 --- [registro] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-05T17:30:39.185+02:00  WARN 82697 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:30:39.185+02:00 ERROR 82697 --- [registro] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:30:39.780+02:00  WARN 82697 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:30:39.781+02:00 ERROR 82697 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:30:40.373+02:00  WARN 82697 --- [registro] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:30:40.375+02:00 ERROR 82697 --- [registro] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:30:40.871+02:00  WARN 82697 --- [registro] [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:30:40.877+02:00 ERROR 82697 --- [registro] [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:48:44.165+02:00  INFO 82697 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:48:44.169+02:00  INFO 82697 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T17:48:44.177+02:00  INFO 82697 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-05T17:49:01.931+02:00  INFO 84454 --- [registro] [main] i.p.r.registro.RegistroApplication       : Starting RegistroApplication using Java 17.0.8.1 with PID 84454 (/Users/riccardobartolotta/Desktop/registroMatteo-main/target/classes started by root in /Users/riccardobartolotta/Desktop/registroMatteo-main)
+2024-06-05T17:49:01.935+02:00  INFO 84454 --- [registro] [main] i.p.r.registro.RegistroApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T17:49:02.743+02:00  INFO 84454 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T17:49:02.909+02:00  INFO 84454 --- [registro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 12 JPA repository interfaces.
+2024-06-05T17:49:03.394+02:00  INFO 84454 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-05T17:49:03.401+02:00  INFO 84454 --- [registro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T17:49:03.401+02:00  INFO 84454 --- [registro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-05T17:49:03.466+02:00  INFO 84454 --- [registro] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T17:49:03.467+02:00  INFO 84454 --- [registro] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1465 ms
+2024-06-05T17:49:03.609+02:00  INFO 84454 --- [registro] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T17:49:03.635+02:00  INFO 84454 --- [registro] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-05T17:49:03.650+02:00  INFO 84454 --- [registro] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T17:49:03.788+02:00  INFO 84454 --- [registro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T17:49:03.803+02:00  INFO 84454 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T17:49:04.138+02:00  INFO 84454 --- [registro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4751cd3
+2024-06-05T17:49:04.140+02:00  INFO 84454 --- [registro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T17:49:04.168+02:00  WARN 84454 --- [registro] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.39 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-05T17:49:04.172+02:00  WARN 84454 --- [registro] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T17:49:05.280+02:00  INFO 84454 --- [registro] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T17:49:05.366+02:00  INFO 84454 --- [registro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:49:05.624+02:00  INFO 84454 --- [registro] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05T17:49:06.966+02:00  WARN 84454 --- [registro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T17:49:07.290+02:00  INFO 84454 --- [registro] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-05T17:49:07.305+02:00  INFO 84454 --- [registro] [main] i.p.r.registro.RegistroApplication       : Started RegistroApplication in 5.823 seconds (process running for 6.261)
+2024-06-05T17:49:12.232+02:00  INFO 84454 --- [registro] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05T17:49:12.232+02:00  INFO 84454 --- [registro] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-05T17:49:12.234+02:00  INFO 84454 --- [registro] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-05T17:49:12.360+02:00  WARN 84454 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:49:12.360+02:00 ERROR 84454 --- [registro] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:49:13.198+02:00  WARN 84454 --- [registro] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:49:13.200+02:00 ERROR 84454 --- [registro] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:50:09.309+02:00  WARN 84454 --- [registro] [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:50:09.311+02:00 ERROR 84454 --- [registro] [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:51:30.571+02:00  WARN 84454 --- [registro] [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:51:30.571+02:00 ERROR 84454 --- [registro] [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:51:31.194+02:00  WARN 84454 --- [registro] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-05T17:51:31.198+02:00 ERROR 84454 --- [registro] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ric@ric.ric' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2024-06-05T17:52:21.191+02:00  INFO 84454 --- [registro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T17:52:21.194+02:00  INFO 84454 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-05T17:52:21.200+02:00  INFO 84454 --- [registro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

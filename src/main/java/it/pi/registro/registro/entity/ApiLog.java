@@ -2,7 +2,6 @@ package it.pi.registro.registro.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.time.LocalDateTime;
 
 @Entity
@@ -18,25 +17,37 @@ public class ApiLog {
     private Long id;
 
     @Column
-    private String urlCalled;
+    private String callerIp;
 
     @Column
-    private String callerIp;
+    private String urlCalled;
 
     @Column
     private LocalDateTime requestDate;
 
-    @Column
+    @Column(nullable = true)
     private LocalDateTime responseDate;
 
     @Column
-    private String base64;
+    private String httpRequestMethod;
 
-    public ApiLog(String urlCalled, String callerIp, LocalDateTime callDate, LocalDateTime responseDate, String base64) {
-        this.urlCalled=urlCalled;
+    @Column(length = 10000)
+    private String httpRequestBody;
+
+    @Column
+    private int httpResponseCode;
+
+    @Column
+    private String httpResponseMessage;
+
+    public ApiLog(String callerIp, String urlCalled, LocalDateTime requestDate, LocalDateTime responseDate, String httpRequestMethod, String httpRequestBody, int httpResponseCode, String httpResponseMessage) {
         this.callerIp=callerIp;
-        this.requestDate=callDate;
-        this.responseDate=responseDate;
-        this.base64=base64;
+        this.urlCalled = urlCalled;
+        this.requestDate = requestDate;
+        this.responseDate = responseDate;
+        this.httpRequestMethod = httpRequestMethod;
+        this.httpRequestBody = httpRequestBody;
+        this.httpResponseCode = httpResponseCode;
+        this.httpResponseMessage = httpResponseMessage;
     }
 }

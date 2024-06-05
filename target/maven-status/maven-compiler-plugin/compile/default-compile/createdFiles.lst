@@ -19,6 +19,7 @@ it/pi/registro/registro/dto/DashboardResultDTO.class
 it/pi/registro/registro/repository/UserTypeRepository.class
 it/pi/registro/registro/dto/request/UserInfoRequestDTO.class
 it/pi/registro/registro/validation/PasswordValidator.class
+it/pi/registro/registro/entity/ApiLog$ApiLogBuilder.class
 it/pi/registro/registro/service/UserService.class
 it/pi/registro/registro/configuration/ApiProp.class
 it/pi/registro/registro/dto/request/CsvImportRequestDTO.class

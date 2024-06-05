@@ -12,7 +12,9 @@ import java.util.List;
 
 @Repository
 public interface ApikeyRepository extends JpaRepository<ApiKey, Long> {
-    @Query("SELECT a from ApiKey a where CURDATE() BETWEEN DATE(a.initialDate) AND DATE(a.expireDate) AND  a.apiKey = :apikey")
+    @Query("SELECT a from ApiKey a where CURDATE() " +
+            "BETWEEN DATE(a.initialDate) AND DATE(a.expireDate) AND " +
+            "a.apiKey = :apikey")
     List<ApiKey> findApiKeyByKey(@Param("apikey")String apikey);
 }
 

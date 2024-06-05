@@ -11,9 +11,12 @@ import it.pi.registro.registro.exception.BadRequestException;
 import it.pi.registro.registro.exception.ResourceNotFoundException;
 import it.pi.registro.registro.repository.ApikeyRepository;
 import it.pi.registro.registro.repository.UserRepository;
+import it.pi.registro.registro.service.ApiLogService;
 import it.pi.registro.registro.service.AttendanceService;
 import it.pi.registro.registro.service.ImportService;
 import it.pi.registro.registro.service.UserService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -22,6 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,13 +34,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Base64;
 import java.util.List;
 
 @Service
 @AllArgsConstructor
-@Transactional
 public class ImportServiceImpl implements ImportService {
 
     private static final Logger logger = LoggerFactory.getLogger(AttendanceService.class);
@@ -50,12 +54,18 @@ public class ImportServiceImpl implements ImportService {
 
     private ApiProp apiProp;
 
+    @Autowired
+    private ApiLogService apiLogService;
+
     @Override
-    public void importCsv(CsvImportRequestDTO csvImportRequest) {
+    public void importCsv(CsvImportRequestDTO csvImportRequestDTO,
+                          HttpServletRequest httpServletRequest,
+                          LocalDateTime requestDate,
+                          LocalDateTime responseDate){
        // logger.info("Base 64 is:");
        // logger.info(csvImportRequest.getBase64File());
         try {
-            byte[] decodedBytes = Base64.getDecoder().decode(csvImportRequest.getBase64File());
+            byte[] decodedBytes = Base64.getDecoder().decode(csvImportRequestDTO.getBase64File());
             InputStreamReader reader =
                     new InputStreamReader(new ByteArrayInputStream(decodedBytes), StandardCharsets.UTF_8);
             CSVParser csvParser =
@@ -63,11 +73,17 @@ public class ImportServiceImpl implements ImportService {
                             .DEFAULT
                             .withDelimiter(';')
                             .withFirstRecordAsHeader()
-                            .withHeader("FirstName", "LastName", "email", "Password", "Age", "Address", "City", "Type")
+                            .withHeader("FirstName",
+                                    "LastName",
+                                    "email",
+                                    "Password",
+                                    "Age",
+                                    "Address",
+                                    "City",
+                                    "Type")
                             .parse(reader);
 
             for (CSVRecord csvRecord : csvParser) {
-
                 userRepository.save(
                         User
                                 .builder()
@@ -82,8 +98,6 @@ public class ImportServiceImpl implements ImportService {
                                         .build())
                                 .build()
                 );
-
-
                 String firstName = csvRecord.get("FirstName");
                 String lastName = csvRecord.get("LastName");
                 String email = csvRecord.get("email");
@@ -95,7 +109,21 @@ public class ImportServiceImpl implements ImportService {
             }
             reader.close();
             csvParser.close();
+            apiLogService.saveLog(
+                    csvImportRequestDTO,
+                    httpServletRequest,
+                    HttpStatus.valueOf(HttpStatus.OK.value()).toString(),
+                    HttpStatus.OK.value(),
+                    requestDate,
+                    responseDate);
         } catch (DataIntegrityViolationException | IOException e)   {
+            apiLogService.saveLog(
+                    csvImportRequestDTO,
+                    httpServletRequest,
+                    HttpStatus.valueOf(HttpStatus.BAD_REQUEST.value()).toString(),
+                    HttpStatus.BAD_REQUEST.value(),
+                    requestDate,
+                    responseDate);
             throw new BadRequestException(e.getMessage());
         }
     }
@@ -109,17 +137,17 @@ public class ImportServiceImpl implements ImportService {
                     Constants.ERROR_API_NOT_VALID_CODE);
         }
 
-        if(Arrays.stream(apiProp.getWhiteList()).toList().contains(URI) &&
-                !apikeyRepository.findApiKeyByKey(apiKey).isEmpty()){
-            return true;
+        if(!Arrays.stream(apiProp.getWhiteList()).toList().contains(URI) ||
+                apikeyRepository.findApiKeyByKey(apiKey).isEmpty()){
+            throw new ApiValidationException(
+                    Constants.ERROR_API_NOT_VALID_MESSAGE,
+                    Constants.ERROR_API_NOT_VALID_CODE);
         }
-        return false;
+        return true;
     }
 
     @Override
     public List<User> getusers() {
-
-        System.out.println(apikeyRepository.findApiKeyByKey("0imfnc8mVLWwsAawjYr4Rx-Af50DDqtlx"));
         return userService.getAllUsers();
     }
 }
