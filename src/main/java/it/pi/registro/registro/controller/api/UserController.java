@@ -141,4 +141,6 @@ public class UserController {
         userService.deleteUser(userId, isSoftDelete);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+
 }

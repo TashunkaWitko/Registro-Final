@@ -9,6 +9,21 @@ import org.springframework.stereotype.Component;
 @Getter
 public class RegistroProp {
 
+    @Value("${registro.base}")
+    private String base;
+
+    @Value("${registro.expireDate}")
+    private int expireDate;
+
+    @Value("${registro.subject}")
+    private String subject;
+
+    @Value("${nodeAPI}")
+    private String nodeAPI;
+
+    @Value("${pythonAPI}")
+    private String pythonAPI;
+
     @Value("${registro.apikey}")
     private String apikey;
 

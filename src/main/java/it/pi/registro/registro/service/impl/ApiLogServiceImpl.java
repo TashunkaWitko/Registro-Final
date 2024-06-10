@@ -7,6 +7,7 @@ import it.pi.registro.registro.entity.ApiLog;
 import it.pi.registro.registro.repository.ApilogsRepository;
 import it.pi.registro.registro.service.ApiLogService;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,10 @@ public class ApiLogServiceImpl implements ApiLogService {
 
     @Autowired
     private ObjectMapper objectMapper;
+
+    private HttpServletRequest httpServletRequest;
+
+    private HttpServletResponse httpServletResponse;
 
     @Override
     public void saveLog(CsvImportRequestDTO csvImportRequestDTO,
@@ -47,6 +52,23 @@ public class ApiLogServiceImpl implements ApiLogService {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+        apilogsRepository.save(apiLog);
+    }
+
+    @Override
+    public void saveExternalLog(LocalDateTime requestDate, String externalAPI) throws Exception {
+
+        ApiLog apiLog = new ApiLog(
+                "127.0.0.1",
+                externalAPI,
+                requestDate,
+                LocalDateTime.now(),
+                "GET",
+                "",
+                200,
+                "200 OK"
+                );
+
         apilogsRepository.save(apiLog);
     }
 }

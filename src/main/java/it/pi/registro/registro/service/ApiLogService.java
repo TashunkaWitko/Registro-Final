@@ -13,5 +13,8 @@ public interface ApiLogService {
                  String httpServletResponse,
                  int httpStatusCode,
                  LocalDateTime requestDate,
-                 LocalDateTime responseDate) ;
+                 LocalDateTime responseDate);
+
+    void saveExternalLog(LocalDateTime requestDate,
+                         String externalAPI) throws Exception;
 }

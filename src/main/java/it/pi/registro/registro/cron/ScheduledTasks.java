@@ -15,14 +15,12 @@ import java.io.IOException;
 public class ScheduledTasks {
 
     @Autowired
-    private ScheduledService scheduledService;
+    ScheduledService scheduledService;
 
-    @Autowired
-    UserService userService;
+    //@Scheduled(cron = "*/15 * * * * *") // Cron expression for running every minute
+    //public void execute() {
 
-//    @Scheduled(cron = "* * * * * *") // Cron expression for running every minute
-    public void execute() {
-
+        /*
         long unixTimeStamps = System.currentTimeMillis() / 1000L;
 
         File report  = new File("REPORT_" + unixTimeStamps + ".txt");
@@ -40,6 +38,7 @@ public class ScheduledTasks {
                     .forEach(user -> {
                         fileWriter.append(user.getFirstName());
                     });*/
+        /*
             fileWriter.flush();
             fileWriter.close();
             System.out.println("File created successfully!");
@@ -49,9 +48,11 @@ public class ScheduledTasks {
             e.printStackTrace();
         }
     }
-
-//    @Scheduled(cron = "1 * * * * *") // Cron expression for running every minute
-    public void execute1() {
-        scheduledService.createReport();
+    /*
+    */
+   @Scheduled(cron = "*/4 * * * * *") // Cron expression for running every minute
+    public void execute() {
+        scheduledService.getUsersFromExternalAPIs();
+       //scheduledService.createReport();
     }
 }
