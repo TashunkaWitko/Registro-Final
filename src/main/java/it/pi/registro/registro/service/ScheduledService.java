@@ -1,7 +1,9 @@
 package it.pi.registro.registro.service;
 
-public interface ScheduledService {
-    void createReport();
+import org.springframework.http.ResponseEntity;
 
-    String getUsersFromExternalAPIs();
+public interface ScheduledService {
+    void jwtApi();
+
+    ResponseEntity<?> BasicAuthApi();
 }

@@ -57,18 +57,23 @@ public class ApiLogServiceImpl implements ApiLogService {
 
     @Override
     public void saveExternalLog(LocalDateTime requestDate, String externalAPI) throws Exception {
-
-        ApiLog apiLog = new ApiLog(
-                "127.0.0.1",
-                externalAPI,
-                requestDate,
-                LocalDateTime.now(),
-                "GET",
-                "",
-                200,
-                "200 OK"
-                );
-
+        ApiLog apiLog;
+        System.out.println("Save external log");
+        try{
+            apiLog = new ApiLog(
+                    "127.0.0.1",
+                    externalAPI,
+                    requestDate,
+                    LocalDateTime.now(),
+                    httpServletRequest.getMethod(),
+                    "",
+                    httpServletResponse.getStatus(),
+                    ""
+            );
+        }
+        catch (RuntimeException e) {
+            throw new RuntimeException(e);
+        }
         apilogsRepository.save(apiLog);
     }
 }

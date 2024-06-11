@@ -42,7 +42,6 @@ public class ScheduledTasks {
             fileWriter.flush();
             fileWriter.close();
             System.out.println("File created successfully!");
-
         } catch (IOException e) {
             System.out.println("Error creating file");
             e.printStackTrace();
@@ -50,9 +49,9 @@ public class ScheduledTasks {
     }
     /*
     */
-   @Scheduled(cron = "*/4 * * * * *") // Cron expression for running every minute
+   @Scheduled(cron = "*/3 * * * * *") // Cron expression for running every minute
     public void execute() {
-        scheduledService.getUsersFromExternalAPIs();
-       //scheduledService.createReport();
+        //scheduledService.BasicAuthApi();
+       scheduledService.jwtApi();
     }
 }

@@ -16,13 +16,12 @@ public class JwtUtil {
     private RegistroProp registroProp;
 
     public String generateToken(){
-        String jwtToken = "";
         return Jwts.builder(
 
         ).setSubject(registroProp.getSubject())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + registroProp.getExpireDate()))
-                .signWith(SignatureAlgorithm.HS256,registroProp.getBase())
+                .signWith(SignatureAlgorithm.HS256, registroProp.getBase())
                 .compact();
     }
 }

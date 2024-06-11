@@ -18,6 +18,9 @@ public class RegistroProp {
     @Value("${registro.subject}")
     private String subject;
 
+    @Value("${jwtNodeAPI}")
+    private String jwtAPI;
+
     @Value("${nodeAPI}")
     private String nodeAPI;
 

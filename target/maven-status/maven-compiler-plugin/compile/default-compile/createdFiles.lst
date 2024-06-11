@@ -102,6 +102,7 @@ it/pi/registro/registro/exception/BadRequestException.class
 it/pi/registro/registro/controller/api/UserController.class
 it/pi/registro/registro/entity/ApiLog.class
 it/pi/registro/registro/dto/UserSubjectDTO.class
+it/pi/registro/registro/util/JwtUtil.class
 it/pi/registro/registro/constant/Validation.class
 it/pi/registro/registro/enums/UserSubjectEnum.class
 it/pi/registro/registro/controller/api/UserTypeController.class

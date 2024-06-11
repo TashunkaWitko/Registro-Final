@@ -1,5 +1,6 @@
 /Users/riccardobartolotta/Desktop/registroMatteo-main/src/main/java/it/pi/registro/registro/entity/Attendance.java
 /Users/riccardobartolotta/Desktop/registroMatteo-main/src/main/java/it/pi/registro/registro/controller/api/AttendanceController.java
+/Users/riccardobartolotta/Desktop/registroMatteo-main/src/main/java/it/pi/registro/registro/util/JwtUtil.java
 /Users/riccardobartolotta/Desktop/registroMatteo-main/src/main/java/it/pi/registro/registro/service/ApiLogService.java
 /Users/riccardobartolotta/Desktop/registroMatteo-main/src/main/java/it/pi/registro/registro/annotation/NotZeroAndPositive.java
 /Users/riccardobartolotta/Desktop/registroMatteo-main/src/main/java/it/pi/registro/registro/repository/UserDetailRepository.java
